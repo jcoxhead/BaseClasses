@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0BD0701F-A75D-4C3D-8515-7A7D0C70301F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F8B801C-346E-41C2-AF8D-35CC39100DD0}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Storage.CouchbaseDocumentStorage", "src\Schroders.Storage.CouchbaseDocumentStorage\Schroders.Storage.CouchbaseDocumentStorage.xproj", "{0ACF0D64-1E91-4D5D-BC4E-8FFC88014461}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Bus.Core", "src\Schroders.Bus.Core\Schroders.Bus.Core.xproj", "{FBAFF63C-7947-4311-83FA-0CAB0AC49C63}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Bus.MemoryBus", "src\Schroders.Bus.MemoryBus\Schroders.Bus.MemoryBus.xproj", "{DE0AEBEA-08BE-4419-8EC5-24EE032C6156}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Bus.NServiceBus", "src\Schroders.Bus.NServiceBus\Schroders.Bus.NServiceBus.xproj", "{0544F1A0-65CD-4F1B-BBB8-34CB811770FF}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.Hosting", "src\Schroders.ServiceBase.Hosting\Schroders.ServiceBase.Hosting.xproj", "{0FE33A49-9878-434E-9C91-2F84BC292C71}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.RestClient", "src\Schroders.ServiceBase.RestClient\Schroders.ServiceBase.RestClient.xproj", "{A4528D90-2E74-4FC5-8761-7616C4006D0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B6E7E2FD-A1B4-4E38-ABA3-0FB2CAA8217E}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Storage.Core", "src\Schroders.Storage.Core\Schroders.Storage.Core.xproj", "{B6A66307-B96A-4323-9D6D-A35597789058}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Bus.MemoryBus.Tests", "tests\Schroders.Bus.MemoryBus.Tests\Schroders.Bus.MemoryBus.Tests.xproj", "{53F8C527-8F0E-463C-87BB-C4CD850CFA70}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Bus.NServiceBus.Tests", "tests\Schroders.Bus.NServiceBus.Tests\Schroders.Bus.NServiceBus.Tests.xproj", "{5F848C6A-AF3C-4580-B18F-2B0D934A4382}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Storage.CouchbaseStorage.Tests", "tests\Schroders.Storage.CouchbaseStorage.Tests\Schroders.Storage.CouchbaseStorage.Tests.xproj", "{3C3F0BEF-C762-4ED9-90D3-138BF5D58B62}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.ResolvableServiceClient", "src\Schroders.ServiceBase.ResolvableServiceClient\Schroders.ServiceBase.ResolvableServiceClient.xproj", "{20A08757-A543-486B-949E-B2DB5D037442}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.Commands", "src\Schroders.ServiceBase.Commands\Schroders.ServiceBase.Commands.xproj", "{7C3B8A19-2696-4B22-B1D6-CC5FF4B6743D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.ResolvableServiceClient.Tests", "tests\Schroders.ServiceBase.ResolvableServiceClient.Tests\Schroders.ServiceBase.ResolvableServiceClient.Tests.xproj", "{591592F0-61E5-4A0A-8FAA-11B69944E5E9}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Test.Infrastructure", "src\Schroders.Test.Infrastructure\Schroders.Test.Infrastructure.xproj", "{7F15809C-E1B9-4B6C-A0A8-DA83B5A198EE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.RestClient.Tests", "tests\Schroders.ServiceBase.RestClient.Tests\Schroders.ServiceBase.RestClient.Tests.xproj", "{74C79794-2A68-44A4-BCC1-CD962901B40D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Storage.MemoryDocumentStorage", "src\Schroders.Storage.MemoryDocumentStorage\Schroders.Storage.MemoryDocumentStorage.xproj", "{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ACF0D64-1E91-4D5D-BC4E-8FFC88014461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ACF0D64-1E91-4D5D-BC4E-8FFC88014461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ACF0D64-1E91-4D5D-BC4E-8FFC88014461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ACF0D64-1E91-4D5D-BC4E-8FFC88014461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBAFF63C-7947-4311-83FA-0CAB0AC49C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBAFF63C-7947-4311-83FA-0CAB0AC49C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBAFF63C-7947-4311-83FA-0CAB0AC49C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBAFF63C-7947-4311-83FA-0CAB0AC49C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE0AEBEA-08BE-4419-8EC5-24EE032C6156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0AEBEA-08BE-4419-8EC5-24EE032C6156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0AEBEA-08BE-4419-8EC5-24EE032C6156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0AEBEA-08BE-4419-8EC5-24EE032C6156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0544F1A0-65CD-4F1B-BBB8-34CB811770FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0544F1A0-65CD-4F1B-BBB8-34CB811770FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0544F1A0-65CD-4F1B-BBB8-34CB811770FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0544F1A0-65CD-4F1B-BBB8-34CB811770FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE33A49-9878-434E-9C91-2F84BC292C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE33A49-9878-434E-9C91-2F84BC292C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE33A49-9878-434E-9C91-2F84BC292C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE33A49-9878-434E-9C91-2F84BC292C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4528D90-2E74-4FC5-8761-7616C4006D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4528D90-2E74-4FC5-8761-7616C4006D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4528D90-2E74-4FC5-8761-7616C4006D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4528D90-2E74-4FC5-8761-7616C4006D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A66307-B96A-4323-9D6D-A35597789058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A66307-B96A-4323-9D6D-A35597789058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A66307-B96A-4323-9D6D-A35597789058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A66307-B96A-4323-9D6D-A35597789058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F8C527-8F0E-463C-87BB-C4CD850CFA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F8C527-8F0E-463C-87BB-C4CD850CFA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F8C527-8F0E-463C-87BB-C4CD850CFA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F8C527-8F0E-463C-87BB-C4CD850CFA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F848C6A-AF3C-4580-B18F-2B0D934A4382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F848C6A-AF3C-4580-B18F-2B0D934A4382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F848C6A-AF3C-4580-B18F-2B0D934A4382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F848C6A-AF3C-4580-B18F-2B0D934A4382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C3F0BEF-C762-4ED9-90D3-138BF5D58B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C3F0BEF-C762-4ED9-90D3-138BF5D58B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C3F0BEF-C762-4ED9-90D3-138BF5D58B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C3F0BEF-C762-4ED9-90D3-138BF5D58B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20A08757-A543-486B-949E-B2DB5D037442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A08757-A543-486B-949E-B2DB5D037442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A08757-A543-486B-949E-B2DB5D037442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A08757-A543-486B-949E-B2DB5D037442}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3B8A19-2696-4B22-B1D6-CC5FF4B6743D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3B8A19-2696-4B22-B1D6-CC5FF4B6743D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3B8A19-2696-4B22-B1D6-CC5FF4B6743D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3B8A19-2696-4B22-B1D6-CC5FF4B6743D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{591592F0-61E5-4A0A-8FAA-11B69944E5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591592F0-61E5-4A0A-8FAA-11B69944E5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591592F0-61E5-4A0A-8FAA-11B69944E5E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591592F0-61E5-4A0A-8FAA-11B69944E5E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F15809C-E1B9-4B6C-A0A8-DA83B5A198EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F15809C-E1B9-4B6C-A0A8-DA83B5A198EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F15809C-E1B9-4B6C-A0A8-DA83B5A198EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F15809C-E1B9-4B6C-A0A8-DA83B5A198EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C79794-2A68-44A4-BCC1-CD962901B40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C79794-2A68-44A4-BCC1-CD962901B40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C79794-2A68-44A4-BCC1-CD962901B40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C79794-2A68-44A4-BCC1-CD962901B40D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0ACF0D64-1E91-4D5D-BC4E-8FFC88014461} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{FBAFF63C-7947-4311-83FA-0CAB0AC49C63} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{DE0AEBEA-08BE-4419-8EC5-24EE032C6156} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{0544F1A0-65CD-4F1B-BBB8-34CB811770FF} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{0FE33A49-9878-434E-9C91-2F84BC292C71} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{A4528D90-2E74-4FC5-8761-7616C4006D0A} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{B6A66307-B96A-4323-9D6D-A35597789058} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{53F8C527-8F0E-463C-87BB-C4CD850CFA70} = {B6E7E2FD-A1B4-4E38-ABA3-0FB2CAA8217E}
+		{5F848C6A-AF3C-4580-B18F-2B0D934A4382} = {B6E7E2FD-A1B4-4E38-ABA3-0FB2CAA8217E}
+		{3C3F0BEF-C762-4ED9-90D3-138BF5D58B62} = {B6E7E2FD-A1B4-4E38-ABA3-0FB2CAA8217E}
+		{20A08757-A543-486B-949E-B2DB5D037442} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{7C3B8A19-2696-4B22-B1D6-CC5FF4B6743D} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{591592F0-61E5-4A0A-8FAA-11B69944E5E9} = {B6E7E2FD-A1B4-4E38-ABA3-0FB2CAA8217E}
+		{7F15809C-E1B9-4B6C-A0A8-DA83B5A198EE} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{74C79794-2A68-44A4-BCC1-CD962901B40D} = {B6E7E2FD-A1B4-4E38-ABA3-0FB2CAA8217E}
+		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+	EndGlobalSection
+EndGlobal

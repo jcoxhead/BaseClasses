@@ -1,0 +1,22 @@
+﻿{
+  "NServiceBusConfiguration": {
+    "ClientEndpoint": {
+      "Name": "Schroders.Product.Client",
+      "FailedMessagesQueueName": "error"
+    },
+    "HandlerEndpoint": {
+      "Name": "Schroders.Product.Handler",
+      "FailedMessagesQueueName": "error"
+    },
+    "Endpoints": [
+      {
+        "Name": "Schroders.Product.Client",
+        "FailedMessagesQueueName": "error"
+      },
+      {
+        "Name": "Schroders.Product.Handler",
+        "FailedMessagesQueueName": "error"
+      }
+    ]
+  }
+}  
