@@ -1,4 +1,7 @@
-﻿namespace Schroders.ServiceBase.Commands.PipelineActions
+﻿
+
+
+namespace Schroders.ServiceBase.Commands.PipelineActions
 {
     public abstract class GenerateIdPipelineActionBase
     {

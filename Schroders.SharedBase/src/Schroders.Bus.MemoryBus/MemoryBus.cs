@@ -1,11 +1,10 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using Schroders.Bus.Core;
 using Schroders.Bus.Core.Contracts;
-
+using System.Linq;
 
 namespace Schroders.Bus.MemoryBus
 {
@@ -25,7 +24,15 @@ namespace Schroders.Bus.MemoryBus
             var handlers = this.busHandlers.FindAll(bh => bh.CanHandleMessage(message));
 
             var busContext = new BusContext(this);
-            handlers.ForEach(busHandler => Task.Run(() => busHandler.HandleMessage(busContext, message)));
+
+            try
+            {
+                Task.WaitAll(handlers.Select(busHandler => Task.Run(() => busHandler.HandleMessage(busContext, message))).Cast<Task>().ToArray());
+            }
+            catch (AggregateException ae)
+            {
+                throw ae.Flatten();
+            }
         }
 
         public void Batch(IBusOperation[] operations)
@@ -44,7 +51,14 @@ namespace Schroders.Bus.MemoryBus
                 TopicName = message.TopicName
             };
 
-            subscribers.ForEach(bs => Task.Run(() => bs.Handler(busContext, busMessage)));
+            try
+            {
+                Task.WaitAll(subscribers.Select(busHandler => Task.Run(() => busHandler.Handler(busContext, busMessage))).Cast<Task>().ToArray());
+            }
+            catch (AggregateException ae)
+            {
+                throw ae.Flatten();
+            }
         }
 
         public BusSubscription Subscribe(string queueName, Func<BusContext, BusMessage, BusHandlerResponse> handler)

@@ -1,0 +1,13 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Http.Abstractions": "1.1.0",
+    "Schroders.Logging.Core": "1.0.0-*",
+    "Serilog": "2.3.0"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}

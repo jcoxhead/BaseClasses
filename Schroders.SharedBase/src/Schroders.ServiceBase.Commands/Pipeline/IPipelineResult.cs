@@ -1,4 +1,5 @@
-﻿namespace Schroders.ServiceBase.Commands.Pipeline
+﻿
+namespace Schroders.ServiceBase.Commands.Pipeline
 {
     public interface IPipelineResult<TResponse, TContext>
     {

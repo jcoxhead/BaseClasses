@@ -1,7 +1,4 @@
 ﻿using System;
-using Newtonsoft.Json;
-
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Schroders.ServiceBase.Commands.Pipeline.PipelineAction;
@@ -15,13 +12,15 @@ namespace Schroders.ServiceBase.Commands.Pipeline
         private readonly ICommand<TRequest, TResponse> commandAction;
         private TRequest request;
 
-        public Pipeline(IPipelineAction<TRequest, TContext>[] prePostActions, ICommand<TRequest, TResponse> commandAction)
+        public Pipeline(IPipelineAction<TRequest, TContext>[] prePostActions,
+            ICommand<TRequest, TResponse> commandAction)
         {
             this.prePostActions = prePostActions;
             this.commandAction = commandAction;
         }
 
-        public virtual IPipelineResult<TResponse, TContext> Execute(TRequest requestParam, IDictionary<string, object> initialContext = null)
+        public virtual IPipelineResult<TResponse, TContext> Execute(TRequest requestParam,
+            IDictionary<string, object> initialContext = null)
         {
             var context = this.InitializeContext(initialContext);
 
@@ -70,7 +69,7 @@ namespace Schroders.ServiceBase.Commands.Pipeline
             {
                 if (!contextParam.Abort)
                 {
-                    result = this.commandAction.Execute(this.request);
+                    result = this.commandAction.Execute(this.request, contextParam);
                 }
             }
             catch (Exception e)
@@ -88,7 +87,7 @@ namespace Schroders.ServiceBase.Commands.Pipeline
 
             try
             {
-                result = (T)input;
+                result = (T) input;
             }
             catch (Exception)
             {

@@ -1,4 +1,5 @@
-﻿namespace Schroders.Bus.Core
+﻿
+namespace Schroders.Bus.Core
 {
     using Schroders.Bus.Core.Contracts;
 

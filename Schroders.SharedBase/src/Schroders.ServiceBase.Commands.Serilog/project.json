@@ -1,0 +1,12 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Schroders.Logging.Core": "1.0.0-*",
+    "Schroders.ServiceBase.Commands": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}

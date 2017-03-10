@@ -44,6 +44,12 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.RestC
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Storage.MemoryDocumentStorage", "src\Schroders.Storage.MemoryDocumentStorage\Schroders.Storage.MemoryDocumentStorage.xproj", "{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Logging.Serilog", "src\Schroders.Logging.Serilog\Schroders.Logging.Serilog.xproj", "{C9DFEBBB-CEEC-4EDD-8D70-CB14B6888131}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.Logging.Core", "src\Schroders.Logging.Core\Schroders.Logging.Core.xproj", "{283741AA-419C-44A0-B7D1-45FF60A5CA9A}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Schroders.ServiceBase.Commands.Serilog", "src\Schroders.ServiceBase.Commands.Serilog\Schroders.ServiceBase.Commands.Serilog.xproj", "{BE489BA2-8CA4-4C27-8739-3F2F66BBE8B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +120,18 @@ Global
 		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9DFEBBB-CEEC-4EDD-8D70-CB14B6888131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DFEBBB-CEEC-4EDD-8D70-CB14B6888131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DFEBBB-CEEC-4EDD-8D70-CB14B6888131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DFEBBB-CEEC-4EDD-8D70-CB14B6888131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283741AA-419C-44A0-B7D1-45FF60A5CA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283741AA-419C-44A0-B7D1-45FF60A5CA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283741AA-419C-44A0-B7D1-45FF60A5CA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283741AA-419C-44A0-B7D1-45FF60A5CA9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE489BA2-8CA4-4C27-8739-3F2F66BBE8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE489BA2-8CA4-4C27-8739-3F2F66BBE8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE489BA2-8CA4-4C27-8739-3F2F66BBE8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE489BA2-8CA4-4C27-8739-3F2F66BBE8B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,5 +153,8 @@ Global
 		{7F15809C-E1B9-4B6C-A0A8-DA83B5A198EE} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
 		{74C79794-2A68-44A4-BCC1-CD962901B40D} = {B6E7E2FD-A1B4-4E38-ABA3-0FB2CAA8217E}
 		{FB5A97AB-B98A-4B4C-BED6-A3659E159FB6} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{C9DFEBBB-CEEC-4EDD-8D70-CB14B6888131} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{283741AA-419C-44A0-B7D1-45FF60A5CA9A} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
+		{BE489BA2-8CA4-4C27-8739-3F2F66BBE8B7} = {0BD0701F-A75D-4C3D-8515-7A7D0C70301F}
 	EndGlobalSection
 EndGlobal

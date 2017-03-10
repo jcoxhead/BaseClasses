@@ -28,7 +28,7 @@ namespace Schroders.ServiceBase.Commands.PipelineActions
                     context.Exception = e;
                 }
 
-                //this.logger.LogError("Unhandled exception cought: {@e}, context: {@context}", e, context);
+                this.logger.LogError("Unhandled exception cought: {@e}, context: {@context}", e, context);
             }
         }
     }

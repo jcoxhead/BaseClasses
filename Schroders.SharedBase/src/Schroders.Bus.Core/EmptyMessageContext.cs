@@ -1,5 +1,4 @@
-﻿
-namespace Schroders.Bus.Core
+﻿namespace Schroders.Bus.Core
 {
     using System.Collections.Generic;
     using System.Collections.ObjectModel;

@@ -21,7 +21,7 @@ namespace Schroders.ServiceBase.Commands.PipelineActions
                 2,
                 (exception, retryCount) =>
                 {
-                    //this.logger.LogWarning("Retry error handler cought: {@exception}, retry count: {@retryCount}, operation id: {@context.GetId()}", exception, retryCount, context.GetId());
+                    this.logger.LogWarning("Retry error handler cought: {@exception}, retry count: {@retryCount}, operation id: {@context.GetId()}", exception, retryCount, context.GetId());
                 });
 
             var policyResult = policy.ExecuteAndCapture(() => next(context));

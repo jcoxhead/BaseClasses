@@ -1,5 +1,4 @@
-﻿
-namespace Schroders.Bus.NServiceBus.Extensions
+﻿namespace Schroders.Bus.NServiceBus.Extensions
 {
     using Microsoft.Extensions.DependencyInjection;
 

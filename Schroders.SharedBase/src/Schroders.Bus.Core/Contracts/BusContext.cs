@@ -1,10 +1,16 @@
 ﻿
+
 namespace Schroders.Bus.Core
 {
-    public class BusEvent
-    {
-        public string TopicName { get; set; }
+    using Schroders.Bus.Core.Contracts;
 
-        public object Payload { get; set; }
+    public class BusContext
+    {
+        public BusContext(IBus bus)
+        {
+            this.Bus = bus;
+        }
+
+        public IBus Bus { get; }
     }
 }
