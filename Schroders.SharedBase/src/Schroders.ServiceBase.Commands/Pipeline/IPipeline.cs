@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using Schroders.ServiceBase.Commands.Pipeline.PipelineAction;
 
 namespace Schroders.ServiceBase.Commands.Pipeline

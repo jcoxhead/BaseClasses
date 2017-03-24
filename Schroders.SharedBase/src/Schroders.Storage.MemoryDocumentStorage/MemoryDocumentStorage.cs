@@ -1,10 +1,11 @@
-﻿namespace Schroders.Storage.MemoryDocumentStorage
+﻿
+namespace Schroders.Storage.MemoryDocumentStorage
 {
-    using Core;
     using System.Collections.Concurrent;
     using System.Collections.Generic;
     using System.Linq;
 
+    using Schroders.Storage.Core;
 
     public class MemoryDocumentStorage : IDocumentStorage
     {

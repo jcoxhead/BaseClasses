@@ -1,5 +1,4 @@
-﻿
-namespace Schroders.Logging.Core.Context
+﻿namespace Schroders.Logging.Core.Context
 {
     public class LoggingContext
     {

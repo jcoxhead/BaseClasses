@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using Microsoft.Extensions.Logging;
 using Schroders.ServiceBase.Commands.Pipeline.PipelineAction;
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace Schroders.Bus.Core
 {

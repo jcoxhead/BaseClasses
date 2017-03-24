@@ -63,7 +63,7 @@ namespace Schroders.ServiceBase.RestClient
 
             if (requestData != null)
             {
-                var jsonString = JsonConvert.SerializeObject(request);
+                var jsonString = JsonConvert.SerializeObject(requestData);
                 requestMessage.Content = new StringContent(jsonString, Encoding.UTF8, "application/json");
             }
 

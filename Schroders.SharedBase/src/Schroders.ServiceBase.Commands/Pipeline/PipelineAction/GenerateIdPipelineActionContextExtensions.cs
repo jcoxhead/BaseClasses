@@ -1,5 +1,4 @@
-﻿
-using Schroders.ServiceBase.Commands.Pipeline.PipelineAction;
+﻿using Schroders.ServiceBase.Commands.Pipeline.PipelineAction;
 
 namespace Schroders.ServiceBase.Commands.PipelineActions
 {

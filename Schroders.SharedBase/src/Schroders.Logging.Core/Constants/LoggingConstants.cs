@@ -1,4 +1,5 @@
-﻿namespace Schroders.Logging.Core.Constants
+﻿
+namespace Schroders.Logging.Core.Constants
 {
     public class LoggingConstants
     {

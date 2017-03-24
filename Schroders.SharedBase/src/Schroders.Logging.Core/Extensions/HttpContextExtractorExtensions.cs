@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿
+using System.Linq;
 using Schroders.Logging.Core.Constants;
 
 namespace Schroders.Logging.Core.Extensions

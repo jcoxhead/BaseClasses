@@ -8,4 +8,3 @@ namespace Schroders.Logging.Core.Constants
         public const string TraceLegId = "TraceLegId";
     }
 }
-

@@ -1,4 +1,5 @@
-﻿namespace Schroders.Bus.Core.Contracts
+﻿
+namespace Schroders.Bus.Core.Contracts
 {
     using System.Collections.Generic;
 

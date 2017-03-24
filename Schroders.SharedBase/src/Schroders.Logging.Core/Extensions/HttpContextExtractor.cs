@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 
 namespace Schroders.Logging.Core.Extensions

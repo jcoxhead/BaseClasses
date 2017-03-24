@@ -1,6 +1,4 @@
-﻿
-
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Reflection;
 using Schroders.Logging.Core.Constants;
 using Serilog;

@@ -4,6 +4,7 @@ using System.Linq;
 using Couchbase;
 using Couchbase.Configuration.Client;
 using Couchbase.Core;
+using Couchbase.N1QL;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Linq;
 using Schroders.Storage.Core;
@@ -11,7 +12,7 @@ using Schroders.Storage.CouchbaseDocumentStorage.Configurations;
 
 namespace Schroders.Storage.CouchbaseDocumentStorage
 {
-    public class CouchbaseStorage : IDocumentStorage
+    public class CouchbaseStorage : IDocumentStorage, IDisposable
     {
         private IBucket bucket;
         private readonly CouchbaseStorageConfiguration couchbaseStorageConfiguration;
@@ -47,8 +48,12 @@ namespace Schroders.Storage.CouchbaseDocumentStorage
         {
             Initialize();
 
-            var query = $"select {bucket.Name}.* from {bucket.Name} where type = '{collectionName}'";
-            var result = bucket.Query<TDocument>(query);
+            var queryRequest = new QueryRequest()
+                .Statement($"select {bucket.Name}.* from {bucket.Name} where type = $collectionName")
+                .AddNamedParameter("collectionName", collectionName)
+                .ScanConsistency(ScanConsistency.RequestPlus);
+
+            var result = bucket.Query<TDocument>(queryRequest);
             return result.Rows;
         }
 
@@ -75,7 +80,16 @@ namespace Schroders.Storage.CouchbaseDocumentStorage
             bucket.Remove(documentId);
         }
 
-        private string GetDocumentId(string collectionName, string id)
+        public void Dispose()
+        {
+            if (bucket != null)
+            {
+                bucket.Dispose();
+                bucket = null;
+            }
+        }
+
+        private static string GetDocumentId(string collectionName, string id)
         {
             return $"{collectionName}_{id}";
         }

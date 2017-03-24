@@ -1,11 +1,13 @@
 {
+  "version": "1.0.0-*",
+
   "dependencies": {
     "CouchbaseNetClient": "2.2.6",
     "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
     "Schroders.Storage.Core": "1.0.0-*"
   },
+
   "frameworks": {
     "net461": {}
-  },
-  "version": "1.0.0-*"
+  }
 }

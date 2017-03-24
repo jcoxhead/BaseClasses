@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using Topshelf;
 
 namespace Schroders.ServiceBase.Hosting
@@ -14,6 +13,8 @@ namespace Schroders.ServiceBase.Hosting
                 cfg.Service(() => service);
 
                 cfg.SetServiceName(service.ApplicationName);
+
+                service.UpdateHostConfigurator(cfg);
             });
         }
     }

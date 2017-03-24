@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Hosting;
+﻿
+
+using Microsoft.AspNetCore.Hosting;
 using Topshelf;
+using Topshelf.HostConfigurators;
 
 namespace Schroders.ServiceBase.Hosting
 {
@@ -20,6 +23,8 @@ namespace Schroders.ServiceBase.Hosting
         }
 
         protected abstract IWebHost CreateHost(HostingConfiguration config, string contentRoot);
+
+        public abstract void UpdateHostConfigurator(HostConfigurator cfg);
 
         public bool Start(HostControl hostControl)
         {

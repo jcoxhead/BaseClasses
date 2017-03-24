@@ -1,5 +1,4 @@
-﻿
-namespace Schroders.Bus.Core
+﻿namespace Schroders.Bus.Core
 {
     public class BusHandlerResponse
     {

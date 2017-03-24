@@ -1,5 +1,4 @@
-﻿
-namespace Schroders.Bus.NServiceBus.Configurations
+﻿namespace Schroders.Bus.NServiceBus.Configurations
 {
     using System;
 

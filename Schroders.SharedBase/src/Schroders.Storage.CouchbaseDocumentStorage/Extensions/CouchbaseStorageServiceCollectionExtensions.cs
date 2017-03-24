@@ -1,6 +1,4 @@
-﻿
-
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Schroders.Storage.Core;
 using Schroders.Storage.CouchbaseDocumentStorage.Configurations;
@@ -19,4 +17,3 @@ namespace Schroders.Storage.CouchbaseDocumentStorage.Extensions
     }
 
 }
-
