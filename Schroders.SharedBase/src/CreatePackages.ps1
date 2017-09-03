@@ -4,13 +4,13 @@ param(
 
 Function CreatePackages($outputDirectory)
 {
-	## Create DIrectory if does not exist
+	## Create Directory if does not exist
 	New-Item -ItemType Directory -Force -Path ($outputDirectory)
 
 	Get-ChildItem -Directory |  ForEach-Object {
 		Write-Host $_.FullName
 		cd $_.FullName
-		dotnet pack -o ($outputDirectory)
+		dotnet pack --version-suffix=alpha -o ($outputDirectory)
 		cd ..
 	}
 }
