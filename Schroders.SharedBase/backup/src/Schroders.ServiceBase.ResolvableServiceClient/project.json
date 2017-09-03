@@ -1,0 +1,13 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Schroders.ServiceBase.RestClient": "1.0.0-*",
+    "Schroders.ServiceDiscovery.RestClient": "1.0.0-1",
+    "System.Net.Http": "4.0.0"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}

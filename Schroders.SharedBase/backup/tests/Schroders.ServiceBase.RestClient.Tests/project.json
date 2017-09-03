@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "testRunner": "mstest",
+
+  "dependencies": {
+    "dotnet-test-mstest": "1.1.2-preview",
+    "Microsoft.AspNetCore.Http": "1.1.0",
+    "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Moq": "4.5.28",
+    "MSTest.TestFramework": "1.0.6-preview",
+    "Schroders.ServiceBase.RestClient": "1.0.0-*",
+    "Microsoft.Extensions.DependencyInjection": "1.1.0"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}

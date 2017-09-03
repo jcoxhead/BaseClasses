@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>Schroders.ServiceBase.ResolvableServiceClient.Tests</AssemblyName>
+    <PackageId>Schroders.ServiceBase.ResolvableServiceClient.Tests</PackageId>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Schroders.Test.Infrastructure\Schroders.Test.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Schroders.ServiceBase.ResolvableServiceClient\Schroders.ServiceBase.ResolvableServiceClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170106-08" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.8-rc" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.0.8-rc" />
+    <PackageReference Include="Moq" Version="4.5.28" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Autofac": "4.1.0",
+    "NServiceBus": "6.0.0",
+    "NServiceBus.Autofac": "6.0.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+    "Microsoft.Extensions.Configuration.Abstractions": "1.1.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
+    "Schroders.Bus.Core": "1.0.0-*",
+    "Microsoft.Extensions.Logging.Abstractions": "1.1.0"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}

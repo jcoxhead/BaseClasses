@@ -1,0 +1,16 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Microsoft.AspNetCore.Hosting": "1.1.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
+    "Microsoft.AspNetCore.Rewrite": "1.0.0",
+    "Topshelf": "4.0.3",
+    "Microsoft.AspNetCore.Server.Kestrel.Https": "1.1.0"
+  },
+
+  "frameworks": {
+    "net461": {}
+  }
+}
